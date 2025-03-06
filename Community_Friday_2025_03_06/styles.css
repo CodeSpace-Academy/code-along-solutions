@@ -1,0 +1,142 @@
+:root {
+  --white: #ffffff;
+  --stone-100: #f3e6d8;
+  --stone-150: #e4ded8;
+  --stone-600: #5f574e;
+  --stone-900: #302d2c;
+  --brown-800: #854632;
+  --rose-800: #7b284f;
+  --rose-50: #fff5fa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--stone-100);
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--stone-600);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.recipe-card {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: var(--stone-900);
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0;
+  height: auto;
+}
+
+.ingredients,
+.instructions {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+  padding-top: 30px;
+}
+
+.prep-time > h2 {
+  color: var(--rose-800);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: 700; /* Bold weight */
+  line-height: 1.2; /* Slightly tighter line-height */
+}
+
+.prep-time ul li::marker {
+  color: var(--rose-800);
+}
+
+h2 {
+  color: var(--brown-800);
+  padding-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--brown-800);
+  font-weight: 900;
+}
+
+li {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr:nth-child(-n + 3) {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+td {
+  padding: 8px;
+}
+
+td:nth-child(1) {
+  padding-left: 30px;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+  color: var(--brown-800);
+}
