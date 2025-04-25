@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- RATING MODAL -->
+    <div class="rating-container">
+      <div class="star-container">
+        <img class="star-img" src="./images/icon-star.svg" />
+      </div>
+      <div class="text-container">
+        <h1 class="rating-heading">How did we do?</h1>
+        <p class="rating-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="ratings-container">
+        <div class="rating-bubble">
+          <span class="rating-bubble-text">1</span>
+        </div>
+        <div class="rating-bubble">
+          <span class="rating-bubble-text">2</span>
+        </div>
+        <div class="rating-bubble">
+          <span class="rating-bubble-text">3</span>
+        </div>
+        <div class="rating-bubble">
+          <span class="rating-bubble-text">4</span>
+        </div>
+        <div class="rating-bubble">
+          <span class="rating-bubble-text">5</span>
+        </div>
+      </div>
+      <button class="submit-button">SUBMIT</button>
+    </div>
+
+    <!-- THANK YOU MODAL -->
+    <div class="thank-you-container hidden">
+      <img class="thank-you-img" src="./images/illustration-thank-you.svg" />
+      <div class="rating-result">
+        <p class="rating-result-text"></p>
+      </div>
+      <div class="msg-container">
+        <h1 class="thank-you-heading">Thank you!</h1>
+        <p class="thank-you-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

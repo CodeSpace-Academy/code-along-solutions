@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --color-bg-body: hsl(216, 12%, 8%);
+  --color-bg-rating-container: hsl(213, 19%, 18%);
+  --color-bg-star-container: hsl(213, 19%, 25%);
+  --color-text-default: white;
+  --color-text-description: hsl(217, 12%, 63%);
+  --color-bubble-hover-bg: white;
+  --color-bubble-hover-text: hsl(213, 19%, 18%);
+  --color-selected: hsl(25, 97%, 53%);
+  --color-submit-bg: hsl(25, 97%, 53%);
+  --color-submit-hover-bg: white;
+  --color-submit-hover-text: black;
+  --color-submit-text: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-body);
+  margin-top: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Rating container styling */
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  padding: 40px 35px 20px 35px;
+  background-color: var(--color-bg-rating-container);
+  border-radius: 10px;
+}
+
+.star-container {
+  background-color: var(--color-bg-star-container);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-img {
+  margin-bottom: 2px;
+}
+
+.text-container {
+  color: var(--color-text-default);
+  font-family: 'Overpass';
+}
+
+.rating-heading {
+  margin-top: 35px;
+  color: var(--color-text-default);
+}
+
+.rating-description {
+  color: var(--color-text-description);
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 0px 20px 0px;
+}
+
+.rating-bubble {
+  background-color: var(--color-bg-star-container);
+  color: var(--color-text-default);
+  font-family: 'Overpass';
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-bubble:hover {
+  background-color: var(--color-bubble-hover-bg);
+  color: var(--color-bubble-hover-text);
+  cursor: pointer;
+}
+
+.rating-bubble.selected {
+  background-color: var(--color-selected);
+  color: var(--color-text-default);
+}
+
+.rating-bubble-text {
+  margin-top: 1px;
+}
+
+.submit-button {
+  letter-spacing: 0.1rem;
+  font-size: 13px;
+  font-family: 'Overpass';
+  background-color: var(--color-submit-bg);
+  color: var(--color-submit-text);
+  border-radius: 25px;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+}
+
+/* Thank you container */
+
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Overpass';
+  height: 330px;
+  width: 350px;
+  padding: 40px 35px 20px 35px;
+  background-color: var(--color-bg-rating-container);
+  border-radius: 10px;
+}
+
+.thank-you-img {
+  width: 140px;
+  height: auto;
+  align-self: center;
+}
+
+.rating-result {
+  align-self: center;
+  background-color: var(--color-bg-star-container);
+  border-radius: 10px;
+  margin: 15px;
+  width: 60%;
+}
+
+.rating-result-text {
+  color: var(--color-selected);
+  margin: 5px;
+  padding-top: 1px;
+}
+
+.thank-you-heading {
+  color: var(--color-text-default);
+}
+
+.thank-you-text {
+  color: var(--color-text-description);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 375px) {
+  .rating-container {
+    width: 250px;
+    height: 300px;
+    padding: 20px 35px 20px 35px;
+  }
+
+  .rating-heading {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .rating-bubble {
+    height: 35px;
+    width: 35px;
+  }
+
+  .star-container {
+    width: 35px;
+    height: 35px;
+  }
+
+  .star-img {
+    height: 15px;
+    width: auto;
+    margin-left: 2px;
+  }
+
+  .thank-you-container {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .submit-button:hover {
+    background-color: var(--color-submit-hover-bg);
+    color: var(--color-submit-hover-text);
+    cursor: pointer;
+  }
+}
